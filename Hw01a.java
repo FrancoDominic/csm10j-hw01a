@@ -25,11 +25,13 @@ public class Hw01a
         
         Scanner inFile = new Scanner(new File("stocks.txt"));
         
+        //reads the contents of "stocks.txt" and declares variables
         firstTicker = inFile.next();
         firstTickerPrice = inFile.nextDouble();
         secondTicker = inFile.next();
         secondTickerPrice = inFile.nextDouble();
         
+        //first menu of choices
         System.out.println ("Enter '1' to get price by stock ticker.");
         
         System.out.println ("Enter '2' to get stocks greater than or equal to"
@@ -51,7 +53,7 @@ public class Hw01a
         */
                 
                 
-        switch (choice)
+        switch (choice)//choice = the integer the user inputs 
         {
             case 1:
             {
@@ -112,7 +114,7 @@ public class Hw01a
                 break;
             }
             
-            default:
+            default://if the user inputs an int other than 1, 2, or 3
             {
                 System.out.println ("Unrecognized menu option, exiting.");
             }    
